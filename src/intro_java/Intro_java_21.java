@@ -4,8 +4,6 @@
  * and open the template in the editor.
  */
 package intro_java;
-
-import java.util.Objects;
 import java.util.Scanner;
 
 /**
