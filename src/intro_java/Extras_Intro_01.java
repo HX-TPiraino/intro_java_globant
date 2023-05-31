@@ -13,12 +13,16 @@ import java.util.Scanner;
 public class Extras_Intro_01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        int tiempoMins = scanner.nextInt();
+        int dias;
+        int horas;
+        int minsRestantes;
         
-        System.out.println("Ingrese Numero");
-        int num = scanner.nextInt();
-        System.out.println(num);
-        System.out.println("Ingrese Palabra");
-        int palabra = scanner.nextInt();
-        System.out.println(palabra);
+        dias = Math.round(tiempoMins / 1440);
+        horas = Math.round((tiempoMins % 1440) / 60);
+        minsRestantes = Math.round((tiempoMins % 60));
+        
+        System.out.println("Serian: " + dias + ":" + horas + ":" + minsRestantes);
+        
     }
 }
