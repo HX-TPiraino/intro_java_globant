@@ -11,6 +11,13 @@ package intro_java;
  */
 public class Extras_Intro_13 {
     public static void main(String[] args) {
+        int pisos = 15;
+        String piso = "";
         
+        for (int i = 1; i < pisos + 1; i++) {
+            piso += i + " ";
+            System.out.println(piso);
+        }
+  
     }
 }
